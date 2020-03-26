@@ -1,7 +1,5 @@
-def seedjobRepository = 'https://github.com/MacJot/jenkins.git'
-
-pipelineJob("job.from.seed.1") {
-    description("Jenkins DEMO 1 Job - fixed RAW")
+pipelineJob("job.from.seed.1 ") {
+    description("Jenkins DEMO 1 Job from ${SEED_JOB_REPO}")
     keepDependencies(false) 
     disabled(false)
     concurrentBuild(false)
@@ -15,7 +13,8 @@ pipelineJob("job.from.seed.1") {
                 git {
                     branch('*/master')
                     remote {
-                        url(seedjobRepository)
+                        credentials(REPO_CRED_ID)
+                        url(SEED_JOB_REPO)
                     }
                 }
             }
