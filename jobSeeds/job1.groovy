@@ -1,7 +1,7 @@
 def seedjobRepository = 'https://github.com/MacJot/jenkins.git'
 
 pipelineJob("job.from.seed.1") {
-    description("Jenkins DEMO 1 Job")
+    description("Jenkins DEMO 1 Job - fixed RAW")
     keepDependencies(false) 
     disabled(false)
     concurrentBuild(false)
