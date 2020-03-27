@@ -1,0 +1,12 @@
+# mySharedFunction
+
+First function to test Jenkins Shared Library
+
+## Location
+- https://github.com/MacJot/jenkins/vars/mySharedFunction.groovy
+
+## Parameters
+Can be accessible in `params` Map
+- `params.first` - 1st parameter
+- `params.second` - 2nd parameter
+- `params.third` - 3rd parameter
